@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="act1_hola_mundo">Hello World</string>
+    <string name="act1_medium_text">Welcome</string>
+    <string name="act1_smallText">My first Api</string>
+    <string name="act1_edit1_hint">Write Something here</string>
+    <string name="act1_btn1">Click</string>
 </resources>
