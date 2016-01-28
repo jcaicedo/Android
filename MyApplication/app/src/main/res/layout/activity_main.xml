@@ -8,55 +8,51 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.berraco.myapplication.MainActivity">
+    tools:context="com.example.berraco.myapplication.MainActivity"
+    android:weightSum="1">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/act1_hola_mundo"
-        android:id="@+id/tv1" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/act1_medium_text"
-        android:id="@+id/tv2"
-        android:layout_below="@+id/tv1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A1"
+            android:id="@+id/bt1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="188dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/act1_smallText"
-        android:id="@+id/tv3"
-        android:layout_below="@+id/tv2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A2"
+            android:id="@+id/bt2"
+            android:layout_alignBottom="@+id/bt1"
+            android:layout_toRightOf="@+id/bt1"
+            android:layout_toEndOf="@+id/bt1" />
 
-    <EditText
-        android:layout_width="351dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/edit1"
-        android:layout_below="@+id/tv3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="@string/act1_edit1_hint" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A3"
+            android:id="@+id/bt3"
+            android:onClick="accion3"
+            android:layout_alignBottom="@+id/bt2"
+            android:layout_toRightOf="@+id/bt2"
+            android:layout_toEndOf="@+id/bt2" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/act1_btn1"
-        android:id="@+id/btn1"
-        android:layout_below="@+id/edit1"
-        android:layout_alignRight="@+id/tv1"
-        android:layout_alignEnd="@+id/tv1"
-        android:layout_marginTop="41dp" />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_holamundo"
+            android:id="@+id/tv1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/bt2"
+            android:layout_toStartOf="@+id/bt2" />
+    </RelativeLayout>
 </LinearLayout>

@@ -5,4 +5,5 @@
     <string name="act1_smallText">My first Api</string>
     <string name="act1_edit1_hint">Write Something here</string>
     <string name="act1_btn1">Click</string>
+    <string name="tv_holamundo">Hola Mundo</string>
 </resources>
